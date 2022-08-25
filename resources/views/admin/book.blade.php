@@ -25,6 +25,11 @@
             <div class="card" style="width: 15rem;" v-on:click="editData(book)">
                 <div class="card-body">
                     <span class="card-text h3 d-block">@{{ book.title }}</span>
+                    <hr>
+                    <span class="card-number d-block">Author by <a href="" class="text-decoration-none">@{{ book.author.name}}</a></span>
+                    <span class="card-number d-block">Published by <a href="" class="text-decoration-none">@{{ book.publisher.name}}</a></span>
+                    <span class="card-number d-block">In Catalog <a href="" class="text-decoration-none">@{{ book.catalog.name}}</a></span>
+                    <hr>
                     <div class="row">
                         <div class="col-md">
                             <span class="card-number d-block"><b>Rp.@{{ numberWithCommas(book.price) }},-</b></span>
