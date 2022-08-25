@@ -8,6 +8,8 @@ use App\Models\Transaction;
 use App\Models\TransactionDetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 
 class TransactionController extends Controller
 {
@@ -174,21 +176,22 @@ class TransactionController extends Controller
     }
 
     public function test_spatie() {
+        // 1
         // Tambah role
         // $role = Role::create(['name' => 'petugas']);
         // $permission = Permission::create(['name' => 'index peminjaman']);
-
         // Tambah akses
         // $role->givePermissionTo($permission);
         // $permission->assignRole($role);
 
-        // Cek semua User
-        // $user = User::with('roles')->get();
-        // return $user;
-
+        // 2
         // Memberikan akses ke user yang login
         // $user = auth()->user();
         // $user->assignRole('petugas');
+        // return $user;
+
+        // Cek semua User
+        // $user = User::with('roles')->get();
         // return $user;
 
         // Hapus role

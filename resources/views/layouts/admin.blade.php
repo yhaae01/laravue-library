@@ -111,6 +111,7 @@
                                 </p>
                             </a>
                         </li>
+                        @can('index peminjaman')
                         <li class="nav-item">
                             <a href="{{ url('transactions') }}"
                                 class="nav-link {{ request()->is('transactions') ? 'active' : '' }}">
@@ -120,6 +121,7 @@
                                 </p>
                             </a>
                         </li>
+                        @endcan
                         <li class="nav-item">
                             <a href="{{ url('books') }}" class="nav-link {{ request()->is('books') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-book"></i>
